@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bloom</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="./setting.css">
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <header class="header">
+      <div class="blur-bg"></div>
+      <nav class="header-nav">
+         <div class="header-left-block">
+            <div class="nav-text">
+               <h1 class="nav-title title">It’s a hot place for your <br> streaming fantasy.</h1>
+               <p class="nav-subtitle subtitle">It’s a free space for watching streams <br> and chatting with alluring people.</p>
+            </div>
+            <div class="header-mobile">
+               <img src="./img/phone.png" alt="">
+               <button class="header-mobile-btn">Sign up now</button>
+            </div>
+         </div>
+         <div class="header-right-block">
+            <button type="button" class="header-login">Log in</button>
+            <div class="nav-form">
+               <form class="signup-form" action="">
+                  <button type="button" class="google-btn">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="54" height="54">
+                        Sign up with Google
+                  </button>
+                  <div class="or-divider">or</div>
+                     <label class="form-label-email">
+                           Email
+                           <input class="form-input" type="email" placeholder="e.g. Alex@email.com" required>
+                     </label>
+                  <label>
+                        Password
+                        <div class="password-wrapper">
+                           <input class="form-input" type="password" placeholder="8+ characters" required>
+                           <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M19.8698 6.962C20.3438 7.582 20.3438 8.419 19.8698 9.038C18.3768 10.987 14.7948 15 10.6128 15C6.4308 15 2.8488 10.987 1.3558 9.038C1.12519 8.74113 1 8.37592 1 8C1 7.62408 1.12519 7.25887 1.3558 6.962C2.8488 5.013 6.4308 1 10.6128 1C14.7948 1 18.3768 5.013 19.8698 6.962V6.962Z" stroke="#8789A1" stroke-linecap="round" stroke-linejoin="round"/>
+                           <path d="M10.6128 11C12.2697 11 13.6128 9.65685 13.6128 8C13.6128 6.34315 12.2697 5 10.6128 5C8.95595 5 7.61281 6.34315 7.61281 8C7.61281 9.65685 8.95595 11 10.6128 11Z" stroke="#8789A1" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </div>
+                  </label>
+                  <button type="submit" class="email-btn">
+                        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0875076 3.22125C0.263939 2.44818 0.697654 1.75792 1.31762 1.26354C1.93759 0.769156 2.70706 0.499947 3.50001 0.5H24.5C25.293 0.499947 26.0624 0.769156 26.6824 1.26354C27.3024 1.75792 27.7361 2.44818 27.9125 3.22125L14 11.7245L0.0875076 3.22125ZM7.62939e-06 5.21975V17.6517L10.1553 11.4253L7.62939e-06 5.21975ZM11.8318 12.4525L0.334258 19.4998C0.618329 20.0987 1.06668 20.6047 1.62713 20.9589C2.18757 21.313 2.83706 21.5006 3.50001 21.5H24.5C25.1628 21.5001 25.8121 21.3121 26.3722 20.9577C26.9323 20.6032 27.3803 20.0971 27.664 19.498L16.1665 12.4508L14 13.7755L11.8318 12.4508V12.4525ZM17.8448 11.427L28 17.6517V5.21975L17.8448 11.4253V11.427Z" fill="#1A73E8"/>
+                        </svg>
+                        Sign up with Email
+                  </button>
+                  <p class="form-note">
+                        You hereby confirm that you are fully able and competent to access Livebeam and comply with the Terms of Use & Service, and are at least eighteen (18) years of age or the age of majority under the law of the jurisdiction of your residence and the one you are accessing Livebeam from.
+                  </p>
+               </form>
+            </div>
+            <div class="nav-form-title">
+               <p class="title form-title">It’s a dedicated space for your bold fantasies!</p>
+               <p class="subtitle form-subtitle">Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of streaming, flirting and hot communication right now!</p>
+            </div>
+            <div class="nav-form-mobile">
+               <form>
+                  <fieldset>
+                     <legend>I am</legend>
+                     <div class="form-gender-radio">
+                        <input type="radio" id="male" name="gender" value="male" hidden />
+                        <label for="male" class="radio-tile gender-radio-left">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" hidden />
+                        <label for="female" class="radio-tile gender-radio-right">Female</label>
+                     </div>
+                  </fieldset>
+                  <div class="form-mobile-date">
+                     <label for="name">My name</label>
+                     <input type="text" id="name" name="name" placeholder="e.g. Alex" />
+                  </div>
+                  <div class="form-mobile-date">
+                     <label for="dob">I was born on</label>
+                     <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY" />
+                  </div>
+                  <div class="form-mobile-police">
+                     <input type="checkbox" id="agree" name="agree" class="custom-checkbox" />
+                     <label for="agree" class="label-police">
+                        I have read understand and agree to Terms of Use, Privacy Policy, Disclosures & Disclaimers.
+                     </label>
+                  </div>
+                  <div class="form-btn-block">
+                     <button type="submit" class="form-btn">Sign up now</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <section class="section-slider-gif">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/gif/gif-1.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-2.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-3.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-1.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-2.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-3.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-1.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-2.gif" alt="" class="gif-elem" loading="lazy"></div>
+            <div class="swiper-slide"><img src="./img/gif/gif-3.gif" alt="" class="gif-elem" loading="lazy"></div>
+         </div>
+      </div>
+   </section>
+   <section class="section-about">
+      <div class="section-blur"></div>
+      <div class="about-block">
+         <div class="about-block-content">
+            <h2 class="about-block-title title">About</h2>
+            <p class="about-subtitle subtitle">It’s a global <span>streaming platform</span> for communication and meeting incredibly beautiful people. We created an excellent place where you can enjoy your time and <span>find appropriate matches</span> at first.</p>
+            <p class="about-subtitle subtitle">Approximately 80% of our users have already found their lovelies. <span>Watch streams </span>without hindrance and meet someone <span>who interests you.</span></p>
+            <button class="about-block-btn">Join for free</button>
+         </div>
+      </div>
+   </section>
+   <section class="section-advantage">
+      <div class="advantage-blur"></div>
+      <h3 class="section-advantage-title title">Why join us?</h3>
+      <div class="swiper cardsGrid">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+               <div class="section-advantage-card">
+            <div class="card-title">
+               <img src="./img/grid/grid-1.png" alt="" loading="lazy">
+               <p>Chat with attractive streamers for free</p>
+            </div>
+            <div class="card-text">It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore this magical universe of communication!</div>
+         </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="section-advantage-card">
+                  <div class="card-title">
+                     <img src="./img/grid/grid-2.png" alt="" loading="lazy">
+                     <p>Only verified users</p>
+                  </div>
+                  <div class="card-text">We care about the privacy and security of our customers. All accounts are verified so look for an attractive stranger confidently!</div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="section-advantage-card">
+            <div class="card-title">
+                  <img src="./img/grid/grid-3.png" alt="" loading="lazy">
+                  <p>Customized search</p>
+            </div>
+               <div class="card-text">Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or shy beautiful Asian? Make your choice… </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+                  <div class="section-advantage-card">
+                     <div class="card-title">
+                        <img src="./img/grid/grid-4.png" alt="" loading="lazy">
+                        <p>Easy to use</p>
+                     </div>
+                     <div class="card-text">Forget about hundreds of annoying notifications and inconvenient use. 
+                        We have created the platform as easy to use and search as possible. Don’t waste your time studying functionality. 
+                        Just enjoy!
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section-advantage-grid">
+         <div class="section-advantage-card" style="grid-column: 1; grid-row: 1;">
+            <div class="card-title">
+               <img src="./img/grid/grid-1.png" alt="" loading="lazy">
+               <p>Chat with attractive streamers for free</p>
+            </div>
+            <div class="card-text">It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore this magical universe of communication!</div>
+         </div>
+         <div class="section-advantage-card" style="grid-column: 2; grid-row: 1;">
+            <div class="card-title">
+               <img src="./img/grid/grid-2.png" alt="" loading="lazy">
+               <p>Only verified users</p>
+            </div>
+            <div class="card-text">We care about the privacy and security of our customers. All accounts are verified so look for an attractive stranger confidently!</div>
+         </div>
+         <div class="section-advantage-card" style="grid-column: 2; grid-row: 2;">
+            <div class="card-title">
+               <img src="./img/grid/grid-3.png" alt="" loading="lazy">
+               <p>Customized search</p>
+            </div>
+            <div class="card-text">Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or shy beautiful Asian? Make your choice… </div>
+         </div>
+         <div class="section-advantage-card" style="grid-column: 3; grid-row: 2;">
+            <div class="card-title">
+               <img src="./img/grid/grid-4.png" alt="" loading="lazy">
+               <p>Easy to use</p>
+            </div>
+            <div class="card-text">Forget about hundreds of annoying notifications and inconvenient use. 
+               We have created the platform as easy to use and search as possible. Don’t waste your time studying functionality. 
+               Just enjoy!
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="section-info-block">
+      <div class="info-blur-1"></div>
+      <div class="info-blur-2"></div>
+      <div class="info-block-items">
+         <div class="info-block-mobile">
+            <img src="./img/post-img/post-1.jpg" alt="" loading="lazy">
+         </div>
+         <h4 class="section-info title">Here you can find</h4>
+         <div class="section-info-item">
+            <img src="./img/item/item-1.png" alt="" height="36" width="36" loading="lazy">
+            <p>Watching streams of everyone you really like;</p>
+         </div>
+         <div class="section-info-item">
+            <img src="./img/item/item-2.png" alt="" height="36" width="36" loading="lazy">
+            <p>Free communication with pretty streamers;</p>
+         </div>
+         <div class="section-info-item">
+            <img src="./img/item/item-3.png" alt="" height="36" width="36" loading="lazy">
+            <p>Sweet connection with people you match;</p>
+         </div>
+         <div class="section-info-item">
+            <img src="./img/item/item-4.png" alt="" height="36" width="36" loading="lazy">
+            <p>New acquaintances with someone who has <br> similar interests;</p>
+         </div>
+         <div class="section-info-item">
+            <img src="./img/item/item-5.png" alt="" height="36" width="36" loading="lazy">
+            <p>Fascinating hobbies and exciting occupations <br> from people you fancy.</p>
+         </div>
+      </div>
+   </section>
+   <section class="section-carusel-posts">
+      <div class="posts-text">
+         <h5 class="post-title title">It’s a universe of communication and streaming without borders!</h5>
+         <p class="post-subtitle subtitle">Let yourself to be free – share your thoughts, delight, and fears with beautiful strangers!</p>
+      </div>
+      <div class="swiper swiperPost">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-1.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-2.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-3.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-1.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-2.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-3.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-1.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-2.jpg" alt="" class="post" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+            <img src="./img/post-img/post-3.jpg" alt="" class="post" loading="lazy">
+            </div>
+         </div>
+      </div>
+   <div class="post-btn">
+      <button class="about-block-btn">Join us for free</button>
+   </div>
+   </section>
+   <section class="section-getphone">
+      <div class="getphone-left-block">
+         <h6 class="title">It’s a dedicated space for <br> your bold fantasies!</h6>
+         <p class="getphone-subtitle subtitle">Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of streaming, flirting, and hot communication right now!</p>
+         <button class="about-block-btn">Write to her</button>
+      </div>
+      <div class="getphone-right-block">
+         <div class="getphone-blur"></div>
+         <img src="./img/phone.png" alt="" loading="lazy">
+      </div>
+   </section>
+   <footer class="footer">
+      <ul class="footer-contact">
+         <li class="list"><a href="mailto:support@gmail.com">support@gmail.com</a></li>
+         <li class="list"><a href="#">Unsubscribe</a></li>
+      </ul>
+      <div class="footer-block">
+         <ul class="footer-lists">
+            <li class="li-title">Legal terms</li>
+            <li class="list"><a href="#">Terms of Use</a></li>
+            <li class="list"><a href="#">Diclosures&Disclaimers</a></li>
+         </ul>
+         <ul class="footer-lists"> 
+            <li class="li-title">Privacy info</li>
+            <li class="list"><a href="#">Privacy Policy</a></li>
+            <li class="list"><a href="#">Cookie Policy</a></li>
+         </ul>
+         <ul class="footer-lists">
+            <li class="li-title">About</li>
+            <li class="list"><a href="#">About Us</a></li>
+         </ul>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="./script.js"></script>
+</body>
+</html>
