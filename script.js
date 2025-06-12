@@ -46,4 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       navigation: false,
    });
+   document.querySelectorAll('.scroll-to-form').forEach(btn => {
+   btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (window.innerWidth <= 375) {
+      document.getElementById('form-mobile').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      document.getElementById('form-pc').scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 });
